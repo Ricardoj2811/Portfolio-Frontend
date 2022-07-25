@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300;400;700&family=Montserrat:wght@400;600;800&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap");
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dongle:wght@300;400;700&family=Montserrat:wght@400;600;800&family=Open+Sans:wght@300;500;600;700&family=Roboto:ital,wght@0,100;0,700;1,400&display=swap');
+
+body{
+  background-color: black;
 }
 
 .font-weight-bold {
@@ -16,31 +16,13 @@ body {
   font-weight: 400;
 }
 
-.comienzo {
-  margin-top: 310px !important;
-}
-
 .bg-color {
-  background-color: #aac1d59e;
-}
-
-.bg-scrolling {
-  background-color: #9bb0c191;
-}
-
-.color-pink, .letrero-codigo {
-  color: pink;
-}
-
-.navBar {
-  margin-top: 300px;
+  background-color: #b3b2b2;
 }
 
 .navbar-brand img {
-  margin-left: 50px;
   height: 100%;
-  width: 120px;
-  border-radius: 90px;
+  width: 100px;
 }
 
 @media all and (max-width: 576px) {
@@ -50,96 +32,169 @@ body {
   }
 }
 
-.navbar-brand img:hover {
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+.letrasNavBar {
+  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  list-style: none;
 }
+
+.letrasNavBar:hover {
+  color: orange;
+}
+
 
 .navbar-nav .nav-item a:hover {
   -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+  transform: scale(1.2);
 }
 
 .navbar-nav .nav-item a img {
   height: 100%;
-  width: 50px;
+  width: 20px;
 }
 
 @media all and (max-width: 576px) {
   .navbar-nav .nav-item a img {
     height: 100%;
-    width: 30px;
+    width: 15px;
   }
 }
 
 .banner-index {
   background-image: url("../assets/banner.jpg");
   background-size: cover;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-radius: 10px;
-  height: 300px;
+  object-fit: contain;
+  height: 600px;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 576px) {
   .banner-index {
     background-image: url("../assets/banner.jpg");
     background-size: cover;
-    -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
+    height: 500px;
   }
 }
 
 .banner-index .letrero-banner {
-  color: #c786cca1;
-  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-family: 'Open Sans', sans-serif, 700;
   font-size: 4rem;
-  margin-top: 230px;
-  -webkit-animation-name: letrero-index;
-          animation-name: letrero-index;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 0.01s;
-          animation-delay: 0.01s;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 576px) {
   .banner-index .letrero-banner {
     font-size: 2.2rem;
   }
 }
 
-.banner-index .Encabezado {
-  color: white;
-  font-size: 1.5rem;
+.banner-index .letrero-banner2 {
+  color: rgb(158, 149, 149);
+  font-family: 'Open Sans', sans-serif, 700;
+  font-size: 3rem;
 }
 
 @media all and (max-width: 576px) {
-  .banner-index .Encabezado {
-    font-size: 1rem;
+  .banner-index .letrero-banner2 {
+    font-size: 1.8rem;
   }
 }
 
-.banner-index .boton-comprar {
-  color: white;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 2rem;
-  margin-top: 150px;
+.imagenes-index {
+  height: 100%;
+  width: 300px;
+  border-radius: 150px;
+  transition: all 250ms ease-in-out;
 }
 
-.banner-index .boton-comprar:hover {
-  background-color: white;
-  color: black;
+@media all and (max-width: 576px) {
+  .imagenes-index {
+    height: 100%;
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+
+.imagenes-index:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imagenes-experiencia {
+  height: 100%;
+  width: 280px;
+  transition: all 250ms ease-in-out;
 }
 
 @media all and (max-width: 768px) {
-  .banner-index .boton-comprar {
-    margin-top: 150px;
+  .imagenes-experiencia {
+    height: 100%;
+    width: 200px;
   }
+}
+
+.imagenes-experiencia:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.letras-section{
+  color:white;
+  font-size:3rem;
+}
+
+.letras-section-description{
+  color:white;
+  font-size:1.5rem;
+}
+
+.letras-section-titulo{
+  color:white;
+  font-size:2rem;
+}
+
+.letras-section-skills{
+  color:white;
+  font-size:2rem;
+}
+
+@media all and (max-width: 768px) {
+  .letras-section-skills{
+    font-size:1.4rem;
+  }
+}
+
+
+@media all and (max-width: 768px) {
+  .letras-section{
+    color:white;
+    font-size:2.2rem;
+    text-align: center;
+  }
+  
+  .letras-section-description{
+    color:white;
+    font-size:1rem;
+    text-align: center;
+  }
+  
+  .letras-section-titulo{
+    color:white;
+    font-size:1.5rem;
+    text-align: center;
+  }
+}
+
+.progress{
+  width:50%;
+}
+
+.linea-division{
+  color:orange;
+  border: none;
 }
 
 .iconoLapiz img {
@@ -147,12 +202,8 @@ body {
   height: 20px;
 }
 
-.nav-link:hover {
-  color: white !important;
-}
-
 #footer {
-  background-color: #aac1d5;
+  background-color: #b3b2b2;
 }
 
 #footer p {
@@ -162,11 +213,10 @@ body {
 }
 
 #footer .nav img {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 100%;
 }
 
-#inputExperiencia{
-  display: none;
+#footer .nav img:hover {
+  transform: scale(1.1);
 }
-/*# sourceMappingURL=style.css.map */

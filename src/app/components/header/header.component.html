@@ -1,37 +1,97 @@
-<header class="container-fluid">
-    <nav class="container-xl navbar navbar-expand-lg navbar-dark fixed-top banner-index align-items-end">
-        <div class="container-fluid my-0 p-0 mx-3 d-flex navBar">
-            <div>
-                <a class="navbar-brand mt-0" href="index.html"><img src="./assets/fotoDePerfil.JPG"
-                        alt="Foto de Perfil"></a>
-                <h1 class="font-weight-bold text-center mb-0 Encabezado">{{miPortfolio.nombre}}</h1>
-                <h2 class="font-weight-bold text-center mb-0 Encabezado">Developer Full Stack Jr</h2>
-                <h3 class="font-weight-bold text-center mb-0 Encabezado">Ingeniero Mecánico</h3>
-                <div class="mx-auto"></div>
-            </div>
-            <div class="me-0">
-                <div class="mx-auto"></div>
-                <ul class="navbar-nav">
+<header>
+    <nav class="container-fluid m-0 p-0 navbar bg-color navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand"
+                href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa"
+                target="_blank"><img class="navbar-brand" src="./assets/ArgentinaPrograma.png"
+                    alt="Logo de Argentina Programa"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" aria-current="page"
-                            href="https://www.linkedin.com/in/ricardo-javier-jose-nu%C3%B1ez-hernandez-16680012b"
-                            target="_blank"><img src="./assets/linkedin.png" alt="Logo de Linkedin">
-                        </a>
+                        <a class="letrasNavBar mx-2" aria-current="page" href="#acercaDe">Acerca de Mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" aria-current="page"
-                            href="https://github.com/Ricardoj2811" target="_blank"><img src="./assets/github.png"
-                                alt="Logo de GitHub">
-                        </a>
+                        <a class="letrasNavBar mx-2" href="#Experiencia">Experiencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link font-weight-bold" aria-current="page"
-                            href="mailto:ricardoj2811@gmail.com" target="_blank"><img src="./assets/gmail.png"
-                                alt="Logo de gmail">
-                        </a>
+                        <a class="letrasNavBar mx-2" href="#Educacion" tabindex="-1" aria-disabled="true">Educacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="letrasNavBar mx-2" href="#Skills" tabindex="-2" aria-disabled="true">Skils</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="letrasNavBar mx-2" href="#Proyectos" tabindex="-3" aria-disabled="true">Proyectos</a>
                     </li>
                 </ul>
+                <div id="iconosNavBar" class="d-flex d-inline-flex">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" aria-current="page"
+                                href="https://www.linkedin.com/in/ricardo-javier-jose-nu%C3%B1ez-hernandez-16680012b"
+                                target="_blank"><img src="./assets/linkedin.svg" alt="Logo de Linkedin">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" aria-current="page"
+                                href="https://github.com/Ricardoj2811" target="_blank"><img src="./assets/github.svg"
+                                    alt="Logo de GitHub">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold" aria-current="page"
+                                href="mailto:ricardoj2811@gmail.com" target="_blank"><img src="./assets/gmail.svg"
+                                    alt="Logo de gmail">
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img width="20px"
+                                    src="./assets/user.png" alt="Iniciar Sesion"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
+    <div class="container-fluid navbar banner-index text-center">
+        <div class="container-fluid my-0 p-0">
+            <div class="align-items-center mx-auto">
+                <h1 class="font-weight-bold mb-0 letrero-banner">{{miPortfolio.header.banner.nombre}}</h1>
+                <h2 class="font-weight-bold mb-0 letrero-banner2">{{miPortfolio.header.banner.profesion1}}</h2>
+                <h3 class="font-weight-bold mb-0 letrero-banner2">{{miPortfolio.header.banner.profesion2}}</h3>
+            </div>
+        </div>
+    </div>
 </header>
+<div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Usuario</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                    <button type="button" class="btn btn-secondary">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

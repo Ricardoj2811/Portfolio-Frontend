@@ -1,20 +1,28 @@
-<section class="container-xl my-3 border border-dark rounded-3">
-    <div class="d-flex justify-content-between mx-2">
-        <div class="">
-            <h3 class="font-weight-bold my-2">Experiencia</h3>
-        </div>
-        <div class="mx-auto"></div>
-        <div class="iconoLapiz my-2 flex-row-reverse justify-content-end"><button class="btn btn-light"><img src="./assets/penIcon.svg" alt="Icono de Lapiz"></button></div>
+<section class="section container-xl my-3" id="Experiencia">
+    <hr class="linea-division mt-5">
+    <div class="p-0">
+        <h3 class="font-weight-bold letras-section my-3">Experiencia</h3>
     </div>
-
-    <div>
-        <h5 class="mx-2 font-weight-bold">Proyectista Mecánico</h5>
-        <p class="mx-2">Madexa S.A, Julio 2019 - Presente</p>
-        <p class="mx-2" id="titulo">• Diseño de Matrices para la extrusión de Aluminio. <br>
-            • Desarrollo de diseños funcionales en SolidWorks.<br>
-            • Programador de centros de Mecanizado CNC.<br>
-            • Programador de maquinas de electroerosión por hilo.<br>
-            • Seguimiento de funcionalidad de diseños.<br>
-            • Comunicación directa con los clientes.</p>
+    <div class="p-0 row mb-3 p-0 m-0 text-center">
+        <div class="col-12 col-sm-4 text-center mb-3">
+            <a href="{{miPortfolio.experiencia.experiencia1.link}}" target="_blank"><img class="imagenes-experiencia"
+                    src="./assets/{{miPortfolio.experiencia.experiencia1.imagen}}" alt="Logo de Madexa"></a>
+        </div>
+        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
+            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.experiencia.experiencia1.titulo}}</h5>
+            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia1.fechas}}</p>
+            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia1.responsabilidades}}</p>
+        </div>
+    </div>
+    <div class="p-0 row mb-3 mt-5 p-0 m-0 text-center">
+        <div class="col-12 col-sm-4 text-center mb-3">
+            <a href="{{miPortfolio.experiencia.experiencia2.link}}" target="_blank"><img class="imagenes-experiencia"
+                    src="./assets/{{miPortfolio.experiencia.experiencia2.imagen}}" alt="Logo Plumrose"></a>
+        </div>
+        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
+            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.experiencia.experiencia2.titulo}}</h5>
+            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia2.fechas}}</p>
+            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia2.responsabilidades}}</p>
+        </div>
     </div>
 </section>

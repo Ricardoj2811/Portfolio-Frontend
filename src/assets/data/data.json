@@ -1,8 +1,144 @@
 {
-    "id": 1,
-    "titulo": "Persona1",
-    "fotoDePerfil": "fotoDePerfil",
-    "nombre": "Ricardo Nuñez",
-    "Formacion1": "Ingerniero Mecánico",
-    "Formacion2": "Developer Full Stack"
+    "header":{
+        "navBar":{
+            "links":{
+                "linkedIn": "https://www.linkedin.com/in/ricardo-javier-jose-nu%C3%B1ez-hernandez-16680012b",
+                "gitHub": "https://github.com/Ricardoj2811",
+                "mail":"mailto:ricardoj2811@gmail.com"
+            }
+        },
+        "banner":{
+            "nombre": "Ricardo Nuñez",
+            "profesion1": "Full Stack Developer",
+            "profesion2": "Ingeniero Mecánico"
+        }
+    },
+    "acercaDeMi":{
+        "fotoDePerfil": "fotoDePerfil.JPG",
+        "descripcion": "Soy Ingeniero Mecánico, he estado ejerciendo mi profesión durante los últimos 4 años, y actualmente decidí hacer un cambio en mi carrera y comencé a estudiar sistemas. Desde entonces me encuentroen formación como programador full stack, y estoy en busca de mi primera experiencia laboral en el área."
+    },
+    "experiencia":{
+        "experiencia1":{
+            "titulo": "Proyectista Mecánico",
+            "imagen": "madexa.png",
+            "link":"https://www.madexa.com.ar/",
+            "fechas":"Madexa S.A, Julio 2019 - Presente",
+            "responsabilidades": "Diseño de Matrices para la extrusión de Aluminio, Desarrollo de diseños funcionales en SolidWorks, Programador de centros de Mecanizado CNC, Programador de maquinas de electroerosión por hilo, Seguimiento de funcionalidad de diseños y Comunicación directa con los clientes."
+        },
+        "experiencia2":{
+            "titulo": "Coordinador de Proyectos",
+            "imagen": "plumrose.png",
+            "link":"https://www.plumrose.com/",
+            "fechas":"Plumrose Latinoamerica C.A, Mar. 2017 - Jun. 2018",
+            "responsabilidades": "Desarrollo de Proyectos, Desarrollo y diseño de líneas de producción en AutoCAD, Relevamiento de cómputos métricos, Atención a proveedores, Seguimiento de funcionalidad de diseños y Manejo de personal."
+        }
+    },
+    "educacion":{
+        "educacion1":{
+            "titulo": "Ingeniero Mecánico",
+            "imagen": "uc.png",
+            "link":"https://dae.ing.uc.edu.ve/pensa/index.php",
+            "fechas":"Universidad de Carabobo - Marzo 2012 - Febrero 2018",
+            "descripcion": "Graduado con el mejor índice académico de la promoción, Preparador de la asignatura Dinámica de Gases."
+        },
+        "educacion2":{
+            "titulo": "Desarrollo Web",
+            "imagen": "coderhouse.png",
+            "link":"https://www.coderhouse.com/?utm_term=coderhouse&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc&gclid=Cj0KCQjw2_OWBhDqARIsAAUNTTHqWFiFAIt5-7ZAUsXKrxM7bCaqZonW3XHrjrAVnCOdsie0H0mPi-YaAtqPEALw_wcB",
+            "fechas":"Coderhouse - Noviembre 2021 a Enero 2022",
+            "descripcion": "HTML, CSS, BootStrap, SEO, y SASS"
+        },
+        "educacion3":{
+            "titulo": "JavaScript",
+            "imagen": "coderhouse.png",
+            "link":"https://www.coderhouse.com/?utm_term=coderhouse&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc&gclid=Cj0KCQjw2_OWBhDqARIsAAUNTTHqWFiFAIt5-7ZAUsXKrxM7bCaqZonW3XHrjrAVnCOdsie0H0mPi-YaAtqPEALw_wcB",
+            "fechas":"Coderhouse - Enero 2022 a Abril 2022",
+            "descripcion": "Parte del Top 10, de los mejores alumnos."
+        },
+        "educacion4":{
+            "titulo": "Programador Full Stack",
+            "imagen": "ArgentinaPrograma.png",
+            "link":"https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa",
+            "fechas":"Argentina Programa - Enero 2022 a Agosto 2022",
+            "descripcion": "Desarrollador FrontEnd (HTML, CSS, JavaScript, Typescript y AngularJS) - Desarrollador BackEnd (MySQL, Java y Spring Boot)"
+        }
+    },
+    "skills":{
+        "skill1":{
+            "nombre":"HMTL",
+            "porcentaje":"75"
+        },
+        "skill2":{
+            "nombre":"CSS",
+            "porcentaje":"75"
+        },
+        "skill3":{
+            "nombre":"JavaScript",
+            "porcentaje":"60"
+        },
+        "skill4":{
+            "nombre":"BootStrap",
+            "porcentaje":"75"
+        },
+        "skill5":{
+            "nombre":"GitHub",
+            "porcentaje":"75"
+        },
+        "skill6":{
+            "nombre":"Diseño Web",
+            "porcentaje":"60"
+        },
+        "skill7":{
+            "nombre":"AngularJS",
+            "porcentaje":"50"
+        },
+        "skill8":{
+            "nombre":"MySQL",
+            "porcentaje":"50"
+        },
+        "skill9":{
+            "nombre":"Java",
+            "porcentaje":"60"
+        },
+        "skill10":{
+            "nombre":"Spring Boot",
+            "porcentaje":"50"
+        },
+        "skill11":{
+            "nombre":"Inglés",
+            "porcentaje":"80"
+        },
+        "skill12":{
+            "nombre":"Alemán",
+            "porcentaje":"30"
+        },
+        "skill13":{
+            "nombre":"Trabajo en Equipo",
+            "porcentaje":"100"
+        },
+        "skill14":{
+            "nombre":"Responsabilidad",
+            "porcentaje":"100"
+        },
+        "skill15":{
+            "nombre":"Puntualidad",
+            "porcentaje":"100"
+        }
+    },
+    "proyectos":{
+        "proyecto1":{
+            "nombre":"Riem Store",
+            "link":"https://ricardoj2811.github.io/Proyecto_Final/",
+            "logo":"logo-riem.png",
+            "descripcion":"Diseño de un E-commerce estático usando HTML, CSS y bootstrap"
+        },
+        "proyecto2":{
+            "nombre":"FA suministros",
+            "link":"https://ricardoj2811.github.io/FA-suministros/",
+            "logo":"logo-fa.png",
+            "descripcion":"Diseño de un E-commerce dinámico usando HTML, CSS, bootstrap y JavaScript"
+        }
+
+    }
+
 }
