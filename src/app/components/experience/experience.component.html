@@ -1,28 +1,23 @@
 <section class="section container-xl my-3" id="Experiencia">
     <hr class="linea-division mt-5">
-    <div class="p-0">
+    <div class="p-0 d-flex mb-5">
         <h3 class="font-weight-bold letras-section my-3">Experiencia</h3>
+        <div class="mx-auto"></div>
+        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
-    <div class="p-0 row mb-3 p-0 m-0 text-center">
+    <div *ngFor="let experiencia of experienciaList" class="p-0 row mb-3 p-0 m-0 text-center">
+        <div class="d-flex justify-content-end">
+            <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
+            <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
+        </div>
         <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.experiencia.experiencia1.link}}" target="_blank"><img class="imagenes-experiencia"
-                    src="./assets/{{miPortfolio.experiencia.experiencia1.imagen}}" alt="Logo de Madexa"></a>
+            <a [href]="experiencia.link" target="_blank"><img class="imagenes-experiencia"
+                    [src]='experiencia.imagen' alt="Logo de Madexa"></a>
         </div>
         <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.experiencia.experiencia1.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia1.fechas}}</p>
-            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia1.responsabilidades}}</p>
-        </div>
-    </div>
-    <div class="p-0 row mb-3 mt-5 p-0 m-0 text-center">
-        <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.experiencia.experiencia2.link}}" target="_blank"><img class="imagenes-experiencia"
-                    src="./assets/{{miPortfolio.experiencia.experiencia2.imagen}}" alt="Logo Plumrose"></a>
-        </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.experiencia.experiencia2.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia2.fechas}}</p>
-            <p class="mx-2 letras-section-description">{{miPortfolio.experiencia.experiencia2.responsabilidades}}</p>
-        </div>
+            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{experiencia.titulo}}</h5>
+            <p class="mx-2 letras-section-description">{{experiencia.fechas}}</p>
+            <p class="mx-2 letras-section-description">{{experiencia.responsabilidades}}</p>
+        </div>        
     </div>
 </section>

@@ -7,14 +7,13 @@ import { PortfolioService } from 'src/app/servicies/service.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  miPortfolio:any;
+  experienciaList:any;
 
   constructor(private datosPortfolio:PortfolioService) { }
 
   ngOnInit(): void {
     this.datosPortfolio.ObtenerDatos().subscribe(data => {
-      console.log(data)
-      this.miPortfolio = data
+      this.experienciaList = data.experiencia;
     });
   }
 

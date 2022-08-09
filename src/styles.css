@@ -47,7 +47,6 @@ body{
 
 
 .navbar-nav .nav-item a:hover {
-  -webkit-transform: scale(1.7);
   transform: scale(1.2);
 }
 
@@ -121,6 +120,11 @@ body{
 .imagenes-index:hover {
   transform: scale(1.1);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.iconos img{
+  height: 30px;
+  width: 30px;
 }
 
 .imagenes-experiencia {

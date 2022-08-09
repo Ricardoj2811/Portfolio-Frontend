@@ -1,57 +1,24 @@
 <section class="section container-xl my-3" id="Educacion">
     <hr class="linea-division mt-5">
-    <div class="p-0">
+    <div class="p-0 d-flex mb-5">
         <h3 class="font-weight-bold letras-section my-3">Educación</h3>
+        <div class="mx-auto"></div>
+        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
-    <div class="p-0 row mb-3 p-0 m-0 text-center">
+    <div *ngFor="let education of educationList" class="p-0 row mb-3 p-0 m-0 text-center my-5">
+        <div class="d-flex justify-content-end">
+            <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
+            <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
+        </div>
         <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.educacion.educacion1.link}}" target="_blank"><img class="imagenes-experiencia"
-                    src="./assets/{{miPortfolio.educacion.educacion1.imagen}}" alt="Logo de la Universidad de Carabobo"></a>
+            <a [href]="education.link" target="_blank"><img class="imagenes-experiencia"
+                    [src]="education.imagen" alt="Logo de la Universidad de Carabobo"></a>
 
         </div>
         <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.educacion.educacion1.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion1.fechas}}</p>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion1.descripcion}}
-            </p>
-        </div>
-    </div>
-    <div class="p-0 row mb-3 p-0 m-0 text-center">
-        <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.educacion.educacion2.link}}" target="_blank"><img class="imagenes-experiencia"
-                    src="./assets/{{miPortfolio.educacion.educacion2.imagen}}" alt="Logo de la Universidad de Carabobo"></a>
-
-        </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.educacion.educacion2.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion2.fechas}}</p>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion2.descripcion}}
-            </p>
-        </div>
-    </div>
-    <div class="p-0 row mb-3 p-0 m-0 text-center">
-        <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.educacion.educacion3.link}}" target="_blank"><img class="imagenes-experiencia"
-                    src="./assets/{{miPortfolio.educacion.educacion3.imagen}}" alt="Logo de la Universidad de Carabobo"></a>
-
-        </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.educacion.educacion3.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion3.fechas}}</p>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion3.descripcion}}
-            </p>
-        </div>
-    </div>
-    <div class="p-0 row mb-3 p-0 m-0 text-center">
-        <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.educacion.educacion4.link}}" target="_blank"><img class="imagenes-experiencia"
-                    src="./assets/{{miPortfolio.educacion.educacion4.imagen}}" alt="Logo de la Universidad de Carabobo"></a>
-
-        </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.educacion.educacion4.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion4.fechas}}</p>
-            <p class="mx-2 letras-section-description">{{miPortfolio.educacion.educacion4.descripcion}}
+            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{education.titulo}}</h5>
+            <p class="mx-2 letras-section-description">{{education.fechas}}</p>
+            <p class="mx-2 letras-section-description">{{education.descripcion}}
             </p>
         </div>
     </div>

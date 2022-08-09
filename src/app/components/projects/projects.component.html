@@ -1,26 +1,19 @@
 <section class="section container-xl my-3" id="Proyectos">
     <hr class="linea-division mt-5">
-    <div class="p-0">
+    <div class="p-0 d-flex mb-5">
         <h3 class="font-weight-bold letras-section my-3">Proyectos</h3>
+        <div class="mx-auto"></div>
+        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
-    <div class="p-0 row mb-3">
-        <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.proyectos.proyecto1.link}}" target="_blank"><img
-                    class="imagenes-experiencia" src="./assets/{{miPortfolio.proyectos.proyecto1.logo}}" alt="Logo de Riem"></a>
-        </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.proyectos.proyecto1.nombre}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.proyectos.proyecto1.descripcion}}</p>
-        </div>
-    </div>
-    <div class="p-0 row mb-3 mt-5">
-        <div class="col-12 col-sm-4 text-center mb-3">
-            <a href="{{miPortfolio.proyectos.proyecto2.link}}" target="_blank"><img
-                    class="imagenes-experiencia" src="./assets/{{miPortfolio.proyectos.proyecto2.logo}}" alt="Logo de Riem"></a>
-        </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{miPortfolio.proyectos.proyecto2.nombre}}</h5>
-            <p class="mx-2 letras-section-description">{{miPortfolio.proyectos.proyecto2.descripcion}}</p>
+    <div class="p-0 row justify-content-center">
+        <div *ngFor="let proyecto of projectsList" class="card m-3 text-center col-xl-3 col-md-4 col-12" style="width: 18rem;">
+            <img [src]="proyecto.logo" class="card-img-top " alt="...">
+            <hr>
+            <div class="card-body">
+                <h5 class="card-title">{{proyecto.nombre}}</h5>
+                <p class="card-text">{{proyecto.descripcion}}</p>
+                <a [href]="proyecto.link" target="_blank" class="btn btn-secondary">Ver sitio</a>
+            </div>
         </div>
     </div>
 </section>
