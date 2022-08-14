@@ -48,8 +48,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" type="submit"><img width="20px"
-                                    src="./assets/user.png" alt="Iniciar Sesion"></a>
+                            <button class="nav-link btn ms-0" type="button" (click)="login()"><img width="20px"
+                                    src="./assets/user.png" alt="Iniciar Sesion"></button>
                         </li>
                     </ul>
                 </div>
@@ -59,7 +59,7 @@
     <div class="container-fluid navbar banner-index text-center">
         <div class="container-fluid my-0 p-0">
             <div class="align-items-center mx-auto">
-                <h1 class="font-weight-bold mb-0 letrero-banner">{{miPortfolio.header.banner.nombre}}</h1>
+                <h1 class="font-weight-bold mb-0 letrero-banner">{{persona.nombre}} {{persona.apellido}}</h1>
                 <h2 class="font-weight-bold mb-0 letrero-banner2">{{miPortfolio.header.banner.profesion1}}</h2>
                 <h3 class="font-weight-bold mb-0 letrero-banner2">{{miPortfolio.header.banner.profesion2}}</h3>
             </div>

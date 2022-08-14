@@ -1,7 +1,7 @@
 <section class="section container-xl my-3" id="Experiencia">
     <hr class="linea-division mt-5">
     <div class="p-0 d-flex mb-5">
-        <h3 class="font-weight-bold letras-section my-3">Experiencia</h3>
+        <h2 class="font-weight-bold letras-section my-3">Experiencia</h2>
         <div class="mx-auto"></div>
         <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
@@ -14,9 +14,10 @@
             <a [href]="experiencia.link" target="_blank"><img class="imagenes-experiencia"
                     [src]='experiencia.imagen' alt="Logo de Madexa"></a>
         </div>
-        <div class="mx-2 col-12 col-sm-8 my-auto mx-auto">
-            <h5 class="mx-2 font-weight-bold letras-section-titulo">{{experiencia.titulo}}</h5>
-            <p class="mx-2 letras-section-description">{{experiencia.fechas}}</p>
+        <div class="mx-2 col-12 col-sm-8 my-5 mx-auto">
+            <h3 class="mx-2 font-weight-bold letras-section-titulo">{{experiencia.titulo}}</h3>
+            <h4 class="mx-2 font-weight-bold letras-section-description">{{experiencia.empresa}}</h4>
+            <p class="mx-2 letras-section-description">{{experiencia.fechaInicio}} / {{experiencia.fechaFinal}}</p>
             <p class="mx-2 letras-section-description">{{experiencia.responsabilidades}}</p>
         </div>        
     </div>

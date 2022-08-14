@@ -41,5 +41,8 @@ export class SignInComponent implements OnInit {
     });
   }
 
+  homePage(){
+    this.ruta.navigate(['/']);
+  }
 
 }

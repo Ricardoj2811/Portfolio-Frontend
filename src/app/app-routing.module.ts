@@ -5,9 +5,10 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 // import { GuardGuard } from './servicies/guard.guard';
 
 const routes: Routes = [
-{path:'portfolio', component:PortfolioComponent, /*canActivate: [GuardGuard]*/}, //Descomentar cuando tenga el sistema de iniciar sesion activado
+  {path:'portfolio', component:PortfolioComponent, /*canActivate: [GuardGuard]*/}, //Descomentar cuando tenga el sistema de iniciar sesion activado
   {path:'sign-in', component:SignInComponent},
-  {path:'',redirectTo:'sign-in', pathMatch:'full'}
+  {path:'', component:PortfolioComponent}
+  // {path:'',redirectTo:'sign-in', pathMatch:'full'}
 ];
 
 @NgModule({

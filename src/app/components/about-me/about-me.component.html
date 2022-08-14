@@ -1,13 +1,24 @@
 <section class="section container-xl my-3" id="acercaDe">
-    <hr class="linea-division mt-5">
-    <div class="p-0 d-flex my-5 m-0">
-        <h3 class="font-weight-bold letras-section">Acerca De Mí</h3>
-        <div class="mx-auto"></div>
-        <a href="" class="iconos bg-light my-auto p-1"><img src="/assets/penIcon.svg" alt="Icono para editar"></a>
+  <hr class="linea-division mt-5" />
+  <div class="p-0 d-flex my-5 m-0">
+    <h3 class="font-weight-bold letras-section">Acerca De Mí</h3>
+    <div class="mx-auto"></div>
+    <a href="" class="iconos bg-light my-auto p-1"
+      ><img src="/assets/penIcon.svg" alt="Icono para editar"
+    /></a>
+  </div>
+  <div class="row p-0 mb-3">
+    <img
+      class="col-12 col-sm-4 mx-auto imagenes-index mb-3"
+      [src]="miPortfolio.acercaDeMi.fotoDePerfil"
+      alt="Foto de Perfil"
+    />
+    <div
+      class="mx-2 col-12 col-sm-8 my-auto mx-auto letras-section-description align-items-center"
+    >
+      <p class="letras-section-description align-items-center">
+        {{ miPortfolio.acercaDeMi.descripcion }}
+      </p>
     </div>
-    <div class="row p-0 mb-3">
-        <img class="col-12 col-sm-4 mx-auto imagenes-index mb-3" [src]="miPortfolio.acercaDeMi.fotoDePerfil"
-            alt="Foto de Perfil">
-        <p class="mx-2 col-12 col-sm-8 my-auto mx-auto letras-section-description align-items-center">{{miPortfolio.acercaDeMi.descripcion}}</p>
-    </div>
+  </div>
 </section>
