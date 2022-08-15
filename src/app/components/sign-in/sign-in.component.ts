@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginUsuario } from 'src/app/model/login-usuario';
 import { AuthenticationService } from 'src/app/servicies/authentication.service';
 
 @Component({
@@ -9,6 +10,13 @@ import { AuthenticationService } from 'src/app/servicies/authentication.service'
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent implements OnInit {
+  isLogged = false;
+  isLoginFail = false;
+  loginUsuario!: LoginUsuario;
+  nombreUsuario!: string;
+  password!: string;
+  roles: string[] = [];
+  errMsj!: string;
   form: FormGroup;
   constructor(private formBuilder: FormBuilder, private authenticationService: AuthenticationService, private ruta: Router) {
     this.form = this.formBuilder.group({
