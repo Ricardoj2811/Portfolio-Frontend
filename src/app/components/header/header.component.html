@@ -48,8 +48,10 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <button class="nav-link btn ms-0" type="button" (click)="login()"><img width="20px"
-                                    src="./assets/user.png" alt="Iniciar Sesion"></button>
+                            <button class="nav-link btn ms-0" type="button" (click)="login()" *ngIf="!isLogged"><img width="20px"
+                                    src="./assets/user.png" alt="Iniciar Sesión"></button>
+                            <button class="nav-link btn ms-0" type="button" (click)="onLogOut()" *ngIf="isLogged"><img width="20px"
+                                        src="./assets/logout.png" alt="Cerrar Sesión"></button>
                         </li>
                     </ul>
                 </div>
