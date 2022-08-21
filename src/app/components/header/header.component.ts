@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { window } from 'rxjs';
 import { persona } from 'src/app/model/persona.model';
 import { PortfolioService } from 'src/app/servicies/service.service';
 import { TokenService } from 'src/app/servicies/token.service';

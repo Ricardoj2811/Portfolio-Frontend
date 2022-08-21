@@ -1,0 +1,50 @@
+<div class="container-md">
+    <h1>Iniciar Sesión</h1>
+    <form  (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="mb-3 form-group">
+            <label for="nombreE" class="form-label">Nombre Experiencia</label>
+            <input type="text"
+            class="form-control" id="nombreE" name="nombreE" 
+            [(ngModel)]="nombreE" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="nombreEmpresaE" class="form-label">Nombre de la Empresa</label>
+            <input type="text"
+            class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
+            [(ngModel)]="nombreEmpresaE" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="descripcionE" class="form-label">Descripcion de la Experiencia</label>
+            <input type="text"
+            class="form-control" id="descripcionE" name="descripcionE" 
+            [(ngModel)]="descripcionE" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="fechaInicioE" class="form-label">Fecha de Inicio</label>
+            <input type="text"
+            class="form-control" id="fechaInicioE" name="fechaInicioE" 
+            [(ngModel)]="fechaInicioE" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="fechaFinalE" class="form-label">Fecha de Finalización</label>
+            <input type="text"
+            class="form-control" id="fechaFinalE" name="fechaFinalE" 
+            [(ngModel)]="fechaFinalE" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="imagen" class="form-label">Logo de la empresa</label>
+            <input type="text"
+            class="form-control" id="imagen" name="imagen" 
+            [(ngModel)]="imagen" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="link" class="form-label">Pagina web de empresa</label>
+            <input type="text"
+            class="form-control" id="link" name="link" 
+            [(ngModel)]="link" required>
+        </div>
+
+        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-primary mx-2">Enviar</button>
+    </form>
+</div>

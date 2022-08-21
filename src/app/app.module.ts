@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PortfolioService } from './servicies/service.service';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { interceptorProvider } from './servicies/interceptor-service';
+import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { interceptorProvider } from './servicies/interceptor-service';
     ProjectsComponent,
     FooterComponent,
     SignInComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    NewExperienciaComponent
   ],
   imports: [
     BrowserModule,

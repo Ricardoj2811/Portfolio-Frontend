@@ -3,9 +3,9 @@
     <div class="p-0 d-flex mb-5">
         <h2 class="font-weight-bold letras-section my-3">Experiencia</h2>
         <div class="mx-auto"></div>
-        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
+        <button class="btn iconos my-auto p-1" routerLink="/nuevaexp" *ngIf="isLogged"><img src="/assets/add.png" alt="Icono para agregar"></button>
     </div>
-    <div *ngFor="let experiencia of experienciaList" class="p-0 row mb-3 p-0 m-0 text-center">
+    <div *ngFor="let experiencia of expe" class="p-0 row mb-3 p-0 m-0 text-center">
         <div class="d-flex justify-content-end">
             <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
             <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
@@ -15,10 +15,10 @@
                     [src]='experiencia.imagen' alt="Logo de Madexa"></a>
         </div>
         <div class="mx-2 col-12 col-sm-8 my-5 mx-auto">
-            <h3 class="mx-2 font-weight-bold letras-section-titulo">{{experiencia.titulo}}</h3>
-            <h4 class="mx-2 font-weight-bold letras-section-description">{{experiencia.empresa}}</h4>
-            <p class="mx-2 letras-section-description">{{experiencia.fechaInicio}} / {{experiencia.fechaFinal}}</p>
-            <p class="mx-2 letras-section-description">{{experiencia.responsabilidades}}</p>
+            <h3 class="mx-2 font-weight-bold letras-section-titulo">{{experiencia.nombreE}}</h3>
+            <h4 class="mx-2 font-weight-bold letras-section-description">{{experiencia.nombreEmpresaE}}</h4>
+            <p class="mx-2 letras-section-description">{{experiencia.fechaInicioE}} / {{experiencia.fechaFinalE}}</p>
+            <p class="mx-2 letras-section-description">{{experiencia.descripcionE}}</p>
         </div>        
     </div>
 </section>

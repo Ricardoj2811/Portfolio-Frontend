@@ -1,5 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/servicies/service.service';
+import { Experiencia } from 'src/app/model/experiencia';
+import { SExperienciaService } from 'src/app/servicies/s-experiencia.service';
+import { TokenService } from 'src/app/servicies/token.service';
 
 @Component({
   selector: 'app-experience',
@@ -7,14 +10,26 @@ import { PortfolioService } from 'src/app/servicies/service.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  experienciaList:any;
+  expe: Experiencia[] = [];
 
-  constructor(private datosPortfolio:PortfolioService) { }
+  constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService, httpClient : HttpClient) { }
+
+  isLogged = false;
 
   ngOnInit(): void {
-    this.datosPortfolio.ObtenerDatos().subscribe(data => {
-      this.experienciaList = data.experiencia;
-    });
+    this.cargarExperiencia();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarExperiencia(): void {
+    this.sExperiencia.lista().subscribe(data => { 
+      this.expe = data;
+    })
   }
 
 }
+
