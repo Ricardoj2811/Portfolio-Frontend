@@ -5,21 +5,21 @@
         <div class="mx-auto"></div>
         <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
-    <div *ngFor="let education of educationList" class="p-0 row mb-3 p-0 m-0 text-center my-5">
+    <div *ngFor="let education of edu" class="p-0 row mb-3 p-0 m-0 text-center my-5">
         <div class="d-flex justify-content-end">
             <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
             <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
         </div>
         <div class="col-12 col-sm-4 text-center mb-3">
-            <a [href]="education.link" target="_blank"><img class="imagenes-experiencia"
-                    [src]="education.imagen" alt="Logo de la Universidad de Carabobo"></a>
+            <a [href]="education.linkEd" target="_blank"><img class="imagenes-experiencia"
+                    [src]="education.imagenEd" alt="Logo de la Universidad de Carabobo"></a>
 
         </div>
         <div class="mx-2 col-12 col-sm-8 my-auto mx-auto mb-5">
-            <h3 class="mx-2 font-weight-bold letras-section-titulo">{{education.titulo}}</h3>
-            <h4 class="mx-2 font-weight-bold letras-section-description">{{education.instituto}}</h4>
-            <p class="mx-2 letras-section-description">{{education.fechaInicio}} / {{education.fechaFinal}}</p>
-            <p class="mx-2 letras-section-description">{{education.descripcion}}
+            <h3 class="mx-2 font-weight-bold letras-section-titulo">{{education.nombreEd}}</h3>
+            <h4 class="mx-2 font-weight-bold letras-section-description">{{education.nombreInstitutoEd}}</h4>
+            <p class="mx-2 letras-section-description">{{education.fechaInicioEd}} / {{education.fechaFinalEd}}</p>
+            <p class="mx-2 letras-section-description">{{education.descripcionEd}}
             </p>
         </div>
     </div>

@@ -6,13 +6,13 @@
         <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
     <div class="p-0 row justify-content-center">
-        <div *ngFor="let proyecto of projectsList" class="card m-3 text-center col-xl-3 col-md-4 col-12" style="width: 18rem;">
-            <img [src]="proyecto.logo" class="card-img-top " alt="...">
+        <div *ngFor="let proyecto of proy" class="card m-3 text-center col-xl-3 col-md-4 col-12" style="width: 18rem;">
+            <img [src]="proyecto.imagenP" class="card-img-top " alt="...">
             <hr>
             <div class="card-body">
-                <h5 class="card-title">{{proyecto.nombre}}</h5>
-                <p class="card-text">{{proyecto.descripcion}}</p>
-                <a [href]="proyecto.link" target="_blank" class="btn btn-secondary">Ver sitio</a>
+                <h5 class="card-title">{{proyecto.nombreP}}</h5>
+                <p class="card-text">{{proyecto.descripcionP}}</p>
+                <a [href]="proyecto.linkP" target="_blank" class="btn btn-secondary">Ver sitio</a>
             </div>
         </div>
     </div>

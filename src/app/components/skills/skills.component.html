@@ -6,15 +6,15 @@
         <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
     </div>
     <div class="row">
-        <div *ngFor="let skill of skillsList" class="text-center col-xl-2 col-md-3 col-sm-4">
+        <div *ngFor="let skill of skills" class="text-center col-xl-2 col-md-3 col-sm-4">
             <div class="justify-content-end">
                 <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
                 <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
             </div>
             <circle-progress
-                [percent]="skill.porcentaje"
+                [percent]="skill.percentSk"
                 [radius]="80"
-                [imageSrc]="skill.imagen"
+                [imageSrc]="skill.imagenSk"
                 [showImage]="true"
                 [imageHeight]="80"
                 [imageWidth]="80"

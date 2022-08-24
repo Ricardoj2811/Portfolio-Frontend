@@ -7,8 +7,8 @@
     </div>
     <div *ngFor="let experiencia of expe" class="p-0 row mb-3 p-0 m-0 text-center">
         <div class="d-flex justify-content-end">
-            <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
-            <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
+            <button *ngIf="isLogged" class="btn iconos bg-light mx-2" routerLink="/editexp/{{experiencia.id}}"><img src="/assets/penIcon.svg" alt="Icono para editar"></button>
+            <button *ngIf="isLogged" (click)="delete(experiencia.id)" class="btn iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></button>
         </div>
         <div class="col-12 col-sm-4 text-center mb-3">
             <a [href]="experiencia.link" target="_blank"><img class="imagenes-experiencia"

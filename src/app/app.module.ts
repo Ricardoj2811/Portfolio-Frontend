@@ -18,6 +18,7 @@ import { PortfolioService } from './servicies/service.service';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { interceptorProvider } from './servicies/interceptor-service';
 import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experience/edit-experiencia.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { NewExperienciaComponent } from './components/experience/new-experiencia
     FooterComponent,
     SignInComponent,
     PortfolioComponent,
-    NewExperienciaComponent
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
