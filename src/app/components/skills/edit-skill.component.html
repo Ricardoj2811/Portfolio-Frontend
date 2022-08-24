@@ -1,0 +1,28 @@
+<div class="container-md" *ngIf="skill">
+    <h1>Editar Educación</h1>
+    <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="mb-3 form-group">
+            <label for="nombreE" class="form-label">Nombre de la Skill</label>
+            <input type="text"
+            class="form-control" id="nombreE" name="nombreE" 
+            [(ngModel)]="skill.nombreSk" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="nombreEmpresaE" class="form-label">Porcentaje de Manejo</label>
+            <input type="number"
+            class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
+            [(ngModel)]="skill.percentSk" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="imagen" class="form-label">Imagen de la Skill</label>
+            <input type="text"
+            class="form-control" id="imagen" name="imagen" 
+            [(ngModel)]="skill.imagenSk" required>
+        </div>
+        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-primary mx-2">Actualizar</button>
+    </form>
+</div>
+
+
+

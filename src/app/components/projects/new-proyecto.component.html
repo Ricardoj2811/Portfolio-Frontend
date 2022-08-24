@@ -1,0 +1,35 @@
+<div class="container-md">
+    <h1>Agregar Proyecto</h1>
+    <form  (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="mb-3 form-group">
+            <label for="nombreE" class="form-label">Nombre del Proyecto</label>
+            <input type="text"
+            class="form-control" id="nombreE" name="nombreE" 
+            [(ngModel)]="nombreP" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="nombreEmpresaE" class="form-label">Descripcion del Proyecto</label>
+            <input type="text"
+            class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
+            [(ngModel)]="descripcionP" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="imagen" class="form-label">Imagen del Proyecto</label>
+            <input type="text"
+            class="form-control" id="imagen" name="imagen" 
+            [(ngModel)]="imagenP" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="imagen" class="form-label">URL del Proyecto </label>
+            <input type="text"
+            class="form-control" id="imagen" name="imagen" 
+            [(ngModel)]="linkP" required>
+        </div>
+        
+        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-primary mx-2">Enviar</button>
+    </form>
+</div>
+
+
+

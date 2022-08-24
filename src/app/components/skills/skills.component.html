@@ -3,13 +3,13 @@
     <div class="p-0 d-flex mb-5">
         <h3 class="font-weight-bold letras-section my-3">Hard and Soft Skils</h3>
         <div class="mx-auto"></div>
-        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
+        <button class="btn iconos my-auto p-1" routerLink="/nuevaskill" *ngIf="isLogged"><img src="/assets/add.png" alt="Icono para agregar"></button>
     </div>
     <div class="row">
         <div *ngFor="let skill of skills" class="text-center col-xl-2 col-md-3 col-sm-4">
             <div class="justify-content-end">
-                <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
-                <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
+                <button *ngIf="isLogged" class="btn iconos bg-light mx-2" routerLink="/editskill/{{skill.id}}"><img src="/assets/penIcon.svg" alt="Icono para agregar"></button>
+                <button *ngIf="isLogged" class="btn iconos mx-2" (click)="delete(skill.id)"><img src="/assets/remove.png" alt="Icono para eliminar"></button>
             </div>
             <circle-progress
                 [percent]="skill.percentSk"

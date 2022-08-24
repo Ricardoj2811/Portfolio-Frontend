@@ -2,7 +2,6 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Proyectos } from 'src/app/model/proyectos';
 import { ProyectosService } from 'src/app/servicies/proyectos.service';
-import { PortfolioService } from 'src/app/servicies/service.service';
 import { TokenService } from 'src/app/servicies/token.service';
 import Swal from 'sweetalert2';
 

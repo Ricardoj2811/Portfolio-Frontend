@@ -1,0 +1,35 @@
+<div class="container-md" *ngIf="proy">
+    <h1>Editar Educación</h1>
+    <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="mb-3 form-group">
+            <label for="nombreP" class="form-label">Nombre del proyecto</label>
+            <input type="text"
+            class="form-control" id="nombreP" name="nombreP" 
+            [(ngModel)]="proy.nombreP" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="descripcionP" class="form-label">Descripcion del Proyecto</label>
+            <input type="text"
+            class="form-control" id="descripcionP" name="descripcionP" 
+            [(ngModel)]="proy.descripcionP" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="imagenP" class="form-label">Imagen del Proyecto</label>
+            <input type="text"
+            class="form-control" id="imagenP" name="imagenP" 
+            [(ngModel)]="proy.imagenP" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="linkP" class="form-label">URL del Proyecto</label>
+            <input type="text"
+            class="form-control" id="linkP" name="linkP" 
+            [(ngModel)]="proy.linkP" required>
+        </div>
+        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-primary mx-2">Actualizar</button>
+    </form>
+</div>
+
+
+
+

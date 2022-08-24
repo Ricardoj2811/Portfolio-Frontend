@@ -3,10 +3,14 @@
     <div class="p-0 d-flex mb-5">
         <h3 class="font-weight-bold letras-section my-3">Proyectos</h3>
         <div class="mx-auto"></div>
-        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
+        <button *ngIf="isLogged" class="btn iconos my-auto p-1" routerLink="/nuevoproy"><img src="/assets/add.png" alt="Icono para agregar"></button>
     </div>
     <div class="p-0 row justify-content-center">
         <div *ngFor="let proyecto of proy" class="card m-3 text-center col-xl-3 col-md-4 col-12" style="width: 18rem;">
+            <div class="justify-content-end">
+                <button *ngIf="isLogged" class="btn iconos bg-light mx-2" routerLink="/editproy/{{proyecto.id}}"><img src="/assets/penIcon.svg" alt="Icono para agregar"></button>
+                <button *ngIf="isLogged" class="btn iconos mx-2" (click)="delete(proyecto.id)"><img src="/assets/remove.png" alt="Icono para eliminar"></button>
+            </div>
             <img [src]="proyecto.imagenP" class="card-img-top " alt="...">
             <hr>
             <div class="card-body">

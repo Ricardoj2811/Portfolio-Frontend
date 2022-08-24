@@ -3,12 +3,12 @@
     <div class="p-0 d-flex mb-5">
         <h2 class="font-weight-bold letras-section my-3">Educación</h2>
         <div class="mx-auto"></div>
-        <a href="" class="iconos my-auto p-1"><img src="/assets/add.png" alt="Icono para agregar"></a>
+        <button class="btn iconos my-auto p-1" routerLink="/nuevaedu" *ngIf="isLogged"><img src="/assets/add.png" alt="Icono para agregar"></button>
     </div>
     <div *ngFor="let education of edu" class="p-0 row mb-3 p-0 m-0 text-center my-5">
         <div class="d-flex justify-content-end">
-            <a href="" class="iconos bg-light mx-2"><img src="/assets/penIcon.svg" alt="Icono para agregar"></a>
-            <a href="" class="iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></a>
+            <button *ngIf="isLogged"  class="btn iconos bg-light mx-2" routerLink="/editedu/{{education.id}}"><img src="/assets/penIcon.svg" alt="Icono para agregar"></button>
+            <button *ngIf="isLogged" (click)="delete(education.id)" class="btn iconos mx-2"><img src="/assets/remove.png" alt="Icono para eliminar"></button>
         </div>
         <div class="col-12 col-sm-4 text-center mb-3">
             <a [href]="education.linkEd" target="_blank"><img class="imagenes-experiencia"

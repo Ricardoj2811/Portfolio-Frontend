@@ -1,0 +1,52 @@
+<div class="container-md" *ngIf="edu">
+    <h1>Editar Educación</h1>
+    <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="mb-3 form-group">
+            <label for="nombreE" class="form-label">Nombre Educación</label>
+            <input type="text"
+            class="form-control" id="nombreE" name="nombreE" 
+            [(ngModel)]="edu.nombreEd" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="nombreEmpresaE" class="form-label">Nombre de la Educación</label>
+            <input type="text"
+            class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
+            [(ngModel)]="edu.nombreInstitutoEd" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="descripcionE" class="form-label">Descripcion de la Educación</label>
+            <input type="text"
+            class="form-control" id="descripcionE" name="descripcionE" 
+            [(ngModel)]="edu.descripcionEd" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="fechaInicioE" class="form-label">Fecha de Inicio</label>
+            <input type="text"
+            class="form-control" id="fechaInicioE" name="fechaInicioE" 
+            [(ngModel)]="edu.fechaInicioEd" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="fechaFinalE" class="form-label">Fecha de Finalización</label>
+            <input type="text"
+            class="form-control" id="fechaFinalE" name="fechaFinalE" 
+            [(ngModel)]="edu.fechaFinalEd" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="imagen" class="form-label">Logo del Instituto</label>
+            <input type="text"
+            class="form-control" id="imagen" name="imagen" 
+            [(ngModel)]="edu.imagenEd" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="link" class="form-label">Pagina web del Instituto</label>
+            <input type="text"
+            class="form-control" id="link" name="link" 
+            [(ngModel)]="edu.linkEd" required>
+        </div>
+
+        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-primary mx-2">Actualizar</button>
+    </form>
+</div>
+
+
