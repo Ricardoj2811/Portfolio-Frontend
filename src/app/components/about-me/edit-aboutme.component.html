@@ -1,0 +1,65 @@
+<div class="container-md" *ngIf="per">
+    <h1>Editar Educación</h1>
+    <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="mb-3 form-group">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text"
+            class="form-control" id="nombre" name="nombre" 
+            [(ngModel)]="per.nombre" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text"
+            class="form-control" id="apellido" name="apellido" 
+            [(ngModel)]="per.apellido" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="img" class="form-label">Foto de Perfil</label>
+            <input type="text"
+            class="form-control" id="img" name="img" 
+            [(ngModel)]="per.img" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="descripcion" class="form-label">Descripcion</label>
+            <input type="text"
+            class="form-control" id="descripcion" name="descripcion" 
+            [(ngModel)]="per.descripcion" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="carrera" class="form-label">Profesión Principal</label>
+            <input type="text"
+            class="form-control" id="carrera" name="carrera" 
+            [(ngModel)]="per.carrera" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="carrera2" class="form-label">Segunda Profesión</label>
+            <input type="text"
+            class="form-control" id="carrera2" name="carrera2" 
+            [(ngModel)]="per.carreraDos" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="linkedin" class="form-label">Link de Perfil de LinkedIn</label>
+            <input type="text"
+            class="form-control" id="linkedin" name="linkedin" 
+            [(ngModel)]="per.linkedIn" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="gitHub" class="form-label">Link de GitHub</label>
+            <input type="text"
+            class="form-control" id="gitHub" name="gitHub" 
+            [(ngModel)]="per.gitHub" required>
+        </div>
+        <div class="mb-3 form-group">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="text"
+            class="form-control" id="correo" name="correo" 
+            [(ngModel)]="per.correo" required>
+        </div>
+
+        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-primary mx-2">Actualizar</button>
+    </form>
+</div>
+
+
+

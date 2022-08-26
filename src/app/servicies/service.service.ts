@@ -18,4 +18,12 @@ export class PortfolioService {
   public getPersona(): Observable<persona> {
     return this.http.get<persona>(this.url + 'traer/persona/1')
   }
+
+  public update(id: number, persona: persona): Observable<any>{
+    return this.http.put<any>(this.url + `update/${id}`, persona);
+  }
+
+  public detail(id: number): Observable<persona>{
+    return this.http.get<persona>(this.url + `detail/${id}`);
+  }
 }
