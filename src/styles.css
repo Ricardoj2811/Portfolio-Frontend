@@ -66,7 +66,7 @@ body{
   background-image: url("../assets/banner.jpg");
   background-size: cover;
   object-fit: contain;
-  height: 600px;
+  height: 700px;
 }
 
 @media all and (max-width: 576px) {
@@ -81,7 +81,7 @@ body{
 .banner-index .letrero-banner {
   color: white;
   font-family: 'Open Sans', sans-serif, 700;
-  font-size: 4rem;
+  font-size: 7rem;
 }
 
 @media all and (max-width: 576px) {
@@ -93,7 +93,7 @@ body{
 .banner-index .letrero-banner2 {
   color: rgb(158, 149, 149);
   font-family: 'Open Sans', sans-serif, 700;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 @media all and (max-width: 576px) {

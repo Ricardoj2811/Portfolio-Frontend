@@ -38,14 +38,14 @@ export class EducationComponent implements OnInit {
         data => {
           Swal.fire({
             title: "¡Excelente!",
-            text: "Se elimino la experiencia correctamente",
+            text: "Se elimino la educación correctamente",
             icon: "success",
           });
           this.cargarEducacion();
         }, err => {
           Swal.fire({
             title: "¡Error!",
-            text: "Algo salio mal :( no se pudo borrar la experiencia",
+            text: "Algo salio mal :( no se pudo borrar la educación",
             icon: "error",
           });
         }

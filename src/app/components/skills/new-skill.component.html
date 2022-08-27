@@ -1,28 +1,31 @@
-<div class="container-md">
-    <h1>Agregar Skill</h1>
+<section class="container-md">
+    <h1 class="my-5">Agregar Skill</h1>
     <form  (ngSubmit)="onCreate()" novalidate #f="ngForm">
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="nombreE" class="form-label">Nombre Skill</label>
             <input type="text"
             class="form-control" id="nombreE" name="nombreE" 
+            placeholder="Escriba aquí el nombre de la Skill"
             [(ngModel)]="nombreSk" required>
         </div>
-        <div class="mb-3 form-group">
-            <label for="nombreEmpresaE" class="form-label">Porcentaje de Manejo</label>
+        <div class="mb-4 form-group">
+            <label for="nombreEmpresaE" class="form-label">Porcentaje de Conocimiento</label>
             <input type="number"
             class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
+            placeholder="Escriba aquí el porcentaje de conocimiento de la Skill"
             [(ngModel)]="percentSk" required>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-5 form-group">
             <label for="imagen" class="form-label">Imagen de la Skill</label>
             <input type="text"
-            class="form-control" id="imagen" name="imagen" 
+            class="form-control" id="imagen" name="imagen"
+            placeholder="Escriba aquí la imagen de la Skill" 
             [(ngModel)]="imagenSk" required>
         </div>
         
-        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
-        <button type="submit" class="btn btn-primary mx-2">Enviar</button>
+        <button type="button" class="btn btn-secondary me-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-success mx-2">Enviar</button>
     </form>
-</div>
+</section>
 
 

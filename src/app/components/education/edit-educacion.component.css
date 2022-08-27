@@ -1,0 +1,35 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 50%;
+}
+
+.descripcion {
+    height: 100px;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+label {
+    color: white;
+    font-weight: 600;
+}
+
+input {
+    border-radius: 0;
+    border-color: #ccc;
+    border-width: 0 0 2px 0;
+    border-style: none none solid none;
+    box-shadow: none;
+    background-color:black;
+    color: rgba(255, 255, 255, 0.39);
+}
+
+button {
+    font-weight: 600;
+}

@@ -6,8 +6,8 @@
         <button class="btn iconos my-auto p-1" routerLink="/nuevaskill" *ngIf="isLogged"><img src="/assets/add.png" alt="Icono para agregar"></button>
     </div>
     <div class="row">
-        <div *ngFor="let skill of skills" class="text-center col-xl-2 col-md-3 col-sm-4">
-            <div class="justify-content-end">
+        <div *ngFor="let skill of skills" class="text-center col-xl-2 col-md-3 col-sm-4 my-5">
+            <div class="justify-content-end mb-3">
                 <button *ngIf="isLogged" class="btn iconos bg-light mx-2" routerLink="/editskill/{{skill.id}}"><img src="/assets/penIcon.svg" alt="Icono para agregar"></button>
                 <button *ngIf="isLogged" class="btn iconos mx-2" (click)="delete(skill.id)"><img src="/assets/remove.png" alt="Icono para eliminar"></button>
             </div>

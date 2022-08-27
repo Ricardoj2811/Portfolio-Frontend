@@ -1,10 +1,11 @@
-<div class="container-md">
-    <h1>Iniciar Sesión</h1>
+<section class="container-sm">
+    <h1 class="mt-5">Iniciar Sesión</h1>
     <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
         <div class="mb-3">
-            <label for="nombreUsuario" class="form-label">Email</label>
+            <label for="nombreUsuario" class="form-label">Nombre de Usuario</label>
             <input type="text"
-            class="form-control" id="nombreUsuario" aria-describedby="emailHelp" name="nombreUsuario" 
+            class="form-control" id="nombreUsuario" aria-describedby="emailHelp" name="nombreUsuario"
+            placeholder="Escriba aquí su nombre de usuario" 
             [(ngModel)]="nombreUsuario" required
             >
         </div>
@@ -12,10 +13,11 @@
             <label for="password" class="form-label">Contraseña</label>
             <input type="password"
             class="form-control" id="password" name="password"
+            placeholder="Escriba aquí su contraseña" 
             [(ngModel)]="password" required
             >
         </div>
-        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
-        <button type="submit" class="btn btn-primary mx-2">Enviar</button>
+        <button type="button" class="btn btn-secondary me-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-success mx-2">Enviar</button>
     </form>
-</div>
+</section>

@@ -1,35 +1,39 @@
-<div class="container-md">
-    <h1>Agregar Proyecto</h1>
+<section class="container-md">
+    <h1 class="my-5">Agregar Proyecto</h1>
     <form  (ngSubmit)="onCreate()" novalidate #f="ngForm">
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="nombreE" class="form-label">Nombre del Proyecto</label>
             <input type="text"
-            class="form-control" id="nombreE" name="nombreE" 
+            class="form-control" id="nombreE" name="nombreE"
+            placeholder="Escriba aquí el nombre del proyecto" 
             [(ngModel)]="nombreP" required>
         </div>
-        <div class="mb-3 form-group">
-            <label for="nombreEmpresaE" class="form-label">Descripcion del Proyecto</label>
-            <input type="text"
+        <div class="mb-4 form-group">
+            <label for="nombreEmpresaE" class="form-label">Descripción del Proyecto</label>
+            <textarea type="text"
             class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
-            [(ngModel)]="descripcionP" required>
+            placeholder="Escriba aquí una breve descripción del proyecto" 
+            [(ngModel)]="descripcionP" required></textarea>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="imagen" class="form-label">Imagen del Proyecto</label>
             <input type="text"
             class="form-control" id="imagen" name="imagen" 
+            placeholder="Escriba aquí la imagen del proyecto" 
             [(ngModel)]="imagenP" required>
         </div>
-        <div class="mb-3 form-group">
-            <label for="imagen" class="form-label">URL del Proyecto </label>
+        <div class="mb-5 form-group">
+            <label for="url" class="form-label">URL del Proyecto </label>
             <input type="text"
-            class="form-control" id="imagen" name="imagen" 
+            class="form-control" id="url" name="url"
+            placeholder="Escriba aquí el link del proyecto"  
             [(ngModel)]="linkP" required>
         </div>
         
-        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
-        <button type="submit" class="btn btn-primary mx-2">Enviar</button>
+        <button type="button" class="btn btn-secondary me-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-success mx-2">Enviar</button>
     </form>
-</div>
+</section>
 
 
 

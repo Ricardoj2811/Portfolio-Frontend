@@ -1,50 +1,57 @@
-<div class="container-md">
-    <h1>Agregar Experiencia</h1>
+<section class="container-md">
+    <h1 class="my-5">Agregar Experiencia</h1>
     <form  (ngSubmit)="onCreate()" novalidate #f="ngForm">
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="nombreE" class="form-label">Nombre Experiencia</label>
             <input type="text"
             class="form-control" id="nombreE" name="nombreE" 
+            placeholder="Escriba aquí el cargo desempeñado"
             [(ngModel)]="nombreE" required>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="nombreEmpresaE" class="form-label">Nombre de la Empresa</label>
             <input type="text"
             class="form-control" id="nombreEmpresaE" name="nombreEmpresaE" 
+            placeholder="Escriba aquí el nombre de la empresa"
             [(ngModel)]="nombreEmpresaE" required>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="descripcionE" class="form-label">Descripcion de la Experiencia</label>
-            <input type="text"
+            <textarea type="text"
             class="form-control" id="descripcionE" name="descripcionE" 
-            [(ngModel)]="descripcionE" required>
+            placeholder="Escriba aquí una breve descripción de sus responsabilidades"
+            [(ngModel)]="descripcionE" required></textarea>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="fechaInicioE" class="form-label">Fecha de Inicio</label>
             <input type="text"
             class="form-control" id="fechaInicioE" name="fechaInicioE" 
+            placeholder="Escriba la fecha de inicio"
             [(ngModel)]="fechaInicioE" required>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="fechaFinalE" class="form-label">Fecha de Finalización</label>
             <input type="text"
             class="form-control" id="fechaFinalE" name="fechaFinalE" 
+            placeholder="Escriba la fecha de finalización"
             [(ngModel)]="fechaFinalE" required>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-4 form-group">
             <label for="imagen" class="form-label">Logo de la empresa</label>
             <input type="text"
             class="form-control" id="imagen" name="imagen" 
+            placeholder="Escriba aquí la logo de la empresa"
             [(ngModel)]="imagen" required>
         </div>
-        <div class="mb-3 form-group">
+        <div class="mb-5 form-group">
             <label for="link" class="form-label">Pagina web de empresa</label>
             <input type="text"
             class="form-control" id="link" name="link" 
+            placeholder="Escriba aquí la URL de la pagina web de la empresa"
             [(ngModel)]="link" required>
         </div>
 
-        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
-        <button type="submit" class="btn btn-primary mx-2">Enviar</button>
+        <button type="button" class="btn btn-secondary me-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-success mx-2">Enviar</button>
     </form>
-</div>
+</section>

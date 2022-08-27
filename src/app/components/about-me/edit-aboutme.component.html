@@ -1,5 +1,5 @@
-<div class="container-md" *ngIf="per">
-    <h1>Editar Educación</h1>
+<section class="container-sm mt-1" *ngIf="per">
+    <h1>Editar Perfil</h1>
     <form  (ngSubmit)="onUpdate()" novalidate #f="ngForm">
         <div class="mb-3 form-group">
             <label for="nombre" class="form-label">Nombre</label>
@@ -20,10 +20,10 @@
             [(ngModel)]="per.img" required>
         </div>
         <div class="mb-3 form-group">
-            <label for="descripcion" class="form-label">Descripcion</label>
-            <input type="text"
-            class="form-control" id="descripcion" name="descripcion" 
-            [(ngModel)]="per.descripcion" required>
+            <label for="descripcion" class="form-label">Descripción</label>
+            <textarea type="text"
+            class="form-control form-text descripcion" id="descripcion" name="descripcion" 
+            [(ngModel)]="per.descripcion" required></textarea>
         </div>
         <div class="mb-3 form-group">
             <label for="carrera" class="form-label">Profesión Principal</label>
@@ -51,15 +51,15 @@
         </div>
         <div class="mb-3 form-group">
             <label for="correo" class="form-label">Correo Electrónico</label>
-            <input type="text"
+            <input type="email"
             class="form-control" id="correo" name="correo" 
             [(ngModel)]="per.correo" required>
         </div>
 
-        <button type="button" class="btn btn-secondary mx-2" (click)="homePage()">Cancelar</button>
-        <button type="submit" class="btn btn-primary mx-2">Actualizar</button>
+        <button type="button" class="btn btn-secondary me-2" (click)="homePage()">Cancelar</button>
+        <button type="submit" class="btn btn-success mx-2">Actualizar</button>
     </form>
-</div>
+</section>
 
 
 

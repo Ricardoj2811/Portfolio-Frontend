@@ -37,14 +37,14 @@ export class SkillsComponent implements OnInit {
         data => {
           Swal.fire({
             title: "¡Excelente!",
-            text: "Se elimino la experiencia correctamente",
+            text: "Se elimino la skill correctamente",
             icon: "success",
           });
           this.cargarSkills();
         }, err => {
           Swal.fire({
             title: "¡Error!",
-            text: "Algo salio mal :( no se pudo borrar la experiencia",
+            text: "Algo salio mal :( no se pudo borrar la skill",
             icon: "error",
           });
         }

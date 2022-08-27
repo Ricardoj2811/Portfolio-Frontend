@@ -7,7 +7,7 @@
     </div>
     <div class="p-0 row justify-content-center">
         <div *ngFor="let proyecto of proy" class="card m-3 text-center col-xl-3 col-md-4 col-12" style="width: 18rem;">
-            <div class="justify-content-end">
+            <div class="justify-content-end mt-3">
                 <button *ngIf="isLogged" class="btn iconos bg-light mx-2" routerLink="/editproy/{{proyecto.id}}"><img src="/assets/penIcon.svg" alt="Icono para agregar"></button>
                 <button *ngIf="isLogged" class="btn iconos mx-2" (click)="delete(proyecto.id)"><img src="/assets/remove.png" alt="Icono para eliminar"></button>
             </div>
