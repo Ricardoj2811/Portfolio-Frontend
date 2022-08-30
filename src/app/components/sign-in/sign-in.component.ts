@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/model/login-usuario';
 import { AuthService } from 'src/app/servicies/auth.service';
 import { TokenService } from 'src/app/servicies/token.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-in',
@@ -43,6 +44,11 @@ export class SignInComponent implements OnInit {
         this.isLoginFail = true;
         this.errMsj = err.error.mensaje;
         console.log(this.errMsj)
+        Swal.fire({
+          title: "¡Error!",
+          text: "Los datos ingresados son incorrectos",
+          icon: "error",
+        });
       })
   }
 

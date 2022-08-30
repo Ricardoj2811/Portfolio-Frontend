@@ -6,6 +6,12 @@ section {
     width: 50%;
 }
 
+@media all and (max-width: 576px) {
+    section {
+        width: 100%;
+    }
+}
+
 .descripcion {
     height: 100px;
 }
